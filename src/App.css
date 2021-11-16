@@ -44,11 +44,18 @@ header {
 
 
 .quote {
-  font-size: 5vw;
+  font-size: 5em;
   color: white;
   font-family: "Indivisible";
   letter-spacing: -0.3vw;
   margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    font-size: 3em;
+  }
 }
 
 .shuffle{
