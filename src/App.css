@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Indivisible";
+  src: url("./fonts/Indivisible-Bold.eot");
+  src: local("./fonts/Indivisible Bold"), local("Indivisible-Bold"),
+    url("./fonts/Indivisible-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Indivisible-Bold.woff2") format("woff2"),
+    url("./fonts/Indivisible-Bold.woff") format("woff"),
+    url("./fonts/Indivisible-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
+.billboard {
   min-height: 100vh;
+  background: #050505;
+  display: flex;
+  align-items: center;
+}
+
+.billboard-wrap{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.billboard a, .billboard span {
+  color:white;
+  text-decoration: underline #fff dotted;
+}
+
+
+.quote {
+  font-size: 5vw;
   color: white;
+  font-family: "Indivisible";
+  letter-spacing: -0.3vw;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.shuffle{
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
