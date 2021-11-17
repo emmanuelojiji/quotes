@@ -1,70 +1,14 @@
-@font-face {
-  font-family: "Indivisible";
-  src: url("./fonts/Indivisible-Bold.eot");
-  src: local("./fonts/Indivisible Bold"), local("Indivisible-Bold"),
-    url("./fonts/Indivisible-Bold.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/Indivisible-Bold.woff2") format("woff2"),
-    url("./fonts/Indivisible-Bold.woff") format("woff"),
-    url("./fonts/Indivisible-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+#root {
+  height: 100%;
 }
 
-.page-container {
+.App {
+  height: 100%;
   width: 100%;
-  max-width: 1200px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 0 auto;
-}
-
-header {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
-.billboard {
-  min-height: 100vh;
-  background: #050505;
-  display: flex;
-  align-items: center;
-}
-
-.billboard-wrap{
-  display: flex;
-  flex-direction: column;
-}
-
-.billboard a, .billboard span {
-  color:white;
-  text-decoration: underline #fff dotted;
-}
-
-
-.quote {
-  font-size: 5em;
-  color: white;
-  font-family: "Indivisible";
-  letter-spacing: -0.3vw;
-  margin-bottom: 20px;
-  overflow-wrap: break-word;
-}
-
-@media only screen and (max-width: 768px) {
-  .quote {
-    font-size: 3em;
-  }
-}
-
-.shuffle{
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-footer {
-  color: white;
-  padding-top: 25px;
-  padding-bottom: 25px;
+main {
+  height: 100%;
+  width: 100%;
 }
