@@ -1,9 +1,30 @@
 .Menu{
     height: 100vh;
     width: 70px;
-    background:#272a33;
     position: fixed;
     left: 0;
     color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .menu-option{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+
+        i{
+            font-size: 1.5em;
+        }
+    }
+
+    .logo{
+        color:#191919;
+        padding-top: 25px;
+    }
 }
+
 
