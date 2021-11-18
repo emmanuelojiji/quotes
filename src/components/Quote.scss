@@ -1,0 +1,47 @@
+.quote-container {
+  width: 100%;
+  max-width: 800px;
+
+  .quote-header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .quote-header-right {
+      display: flex;
+    }
+  }
+
+  .quote {
+    font-size: 1.5em;
+    color: #666666;
+  }
+
+  .affirmation {
+    color: white;
+    font-size: 2em;
+  }
+
+  .quote-icon {
+    width: 20px;
+    margin-right: 35px;
+    cursor: pointer;
+  }
+
+  .refresh {
+    &.spin {
+      animation: spin 0.5s linear;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

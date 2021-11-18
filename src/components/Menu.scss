@@ -1,30 +1,45 @@
-.Menu{
-    height: 100vh;
-    width: 70px;
-    position: fixed;
-    left: 0;
-    color:white;
+.Menu {
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media only screen and (max-width: 768px) {
+   height: auto;
+   bottom:0;
+   width: 100%;
+  }
+
+  .menu-option {
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 30px;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
 
-    .menu-option{
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-
-        i{
-            font-size: 1.5em;
-        }
+    .menu-svg {
+      width: 100%;
+      max-width: 20px;
+      margin-right: 20px;
     }
 
-    .logo{
-        color:#191919;
-        padding-top: 25px;
+    i {
+      margin-right: 20px;
     }
+
+    &.active {
+      background: #42cdca;
+    }
+  }
+
+  .logo {
+    color: #191919;
+    padding-top: 25px;
+  }
 }
-
-

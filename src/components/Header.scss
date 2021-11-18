@@ -1,12 +1,16 @@
 header {
-  width: 100%;
+  max-width: 100%;
     display: flex;
-    position: fixed;
-    margin-left: 70px;
+    margin-left: 200px;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 50px;
     flex-direction: column;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+      padding-left: 5%;
+    }
   }
 
   .day{
