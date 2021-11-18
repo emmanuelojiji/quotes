@@ -13,6 +13,7 @@
    height: auto;
    bottom:0;
    width: 100%;
+   flex-direction: row;
   }
 
   .menu-option {
@@ -22,6 +23,8 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+
+    
 
     .menu-svg {
       width: 100%;
@@ -35,6 +38,12 @@
 
     &.active {
       background: #42cdca;
+    }
+
+    .menu-option-text{
+        @media only screen and (max-width: 768px) {
+            display: none;
+           }
     }
   }
 
