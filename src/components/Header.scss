@@ -1,22 +1,36 @@
 header {
   max-width: 100%;
-    display: flex;
-    margin-left: 200px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
 
-    @media only screen and (max-width: 768px) {
-      margin-left: 0;
-      padding-left: 5%;
-    }
-  }
 
-  .day{
-    color: white;
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+    padding-left: 0;
   }
+}
 
-  .greeting{
-    color:white;
-  }
+.day {
+  color: black;
+  font-family: 'Roboto';
+  font-size: 0.9em;
+}
+
+.greeting {
+  color: black;
+  font-family: 'Roboto';
+}
+
+.profile{
+  height: 35px;
+  width: 35px;
+  background: lightgray;
+  background-image: url("../profile-image.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}

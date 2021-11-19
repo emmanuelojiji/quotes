@@ -2,35 +2,34 @@
   width: 100%;
   max-width: 800px;
 
-  .quote-header {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-
-    .quote-header-right {
-      display: flex;
-    }
+  .affirmation {
+    color: black;
+    font-size: 1.5em;
+    font-family: "Roboto";
   }
 
   .quote {
-    font-size: 1.5em;
-    color: #666666;
+    font-size: 0.9em;
+    color: #c2c2c3;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
   }
 
-  .affirmation {
-    color: white;
-    font-size: 2em;
+  .quote-icon-container {
+    display: flex;
   }
 
   .quote-icon {
-    width: 20px;
+    width: 15px;
     margin-right: 35px;
     cursor: pointer;
+    fill: black;
   }
 
   .refresh {
+    transition: ease 0.5s;
     &.spin {
       animation: spin 0.5s linear;
     }
@@ -38,10 +37,16 @@
     @keyframes spin {
       from {
         transform: rotate(0);
+        fill: white;
       }
       to {
         transform: rotate(360deg);
+        fill: #42cdca;
       }
     }
+  }
+
+  .tweet {
+    color: black;
   }
 }

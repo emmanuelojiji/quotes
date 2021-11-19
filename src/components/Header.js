@@ -22,9 +22,13 @@ const Header = () => {
 
   
   return (
-    <header className="page-container">
+    <header>
+      <div>
       <span className="day">{day}</span>
       <h3 className="greeting">{greeting}</h3>
+      </div>
+
+      <div className="profile"></div>
     </header>
   );
 };

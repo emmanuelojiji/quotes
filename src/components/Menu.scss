@@ -1,8 +1,18 @@
-.Menu {
+.Menu-container {
   height: 100vh;
   width: 220px;
   position: fixed;
   left: 0;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+    height: auto;
+  }
+}
+.Menu {
   color: white;
   display: flex;
   flex-direction: column;
@@ -10,26 +20,36 @@
   padding-right: 20px;
 
   @media only screen and (max-width: 768px) {
-   height: auto;
-   bottom:0;
-   width: 100%;
-   flex-direction: row;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    background: #42cdca;
+    padding: 0;
+    border-radius: 50px;
   }
 
   .menu-option {
     cursor: pointer;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 30px;
     border-radius: 10px;
     display: flex;
     align-items: center;
 
-    
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
 
     .menu-svg {
       width: 100%;
       max-width: 20px;
       margin-right: 20px;
+
+      @media only screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
 
     i {
@@ -38,12 +58,16 @@
 
     &.active {
       background: #42cdca;
+
+      @media only screen and (max-width: 768px) {
+        background: black;
+      }
     }
 
-    .menu-option-text{
-        @media only screen and (max-width: 768px) {
-            display: none;
-           }
+    .menu-option-text {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
