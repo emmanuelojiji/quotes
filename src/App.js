@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import SignUp from "./components/SignUp";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function App(props) {
@@ -20,15 +20,10 @@ function App(props) {
         <main>
           <Header />
 
-          {(() => {
-            if (currentPage === "Home") {
-              return <Home />;
-            } else if (currentPage === "SignUp") {
-              return <SignUp />;
-            } else {
-              return <Home />;
-            }
-          })()}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
         </main>
       </div>
     </>

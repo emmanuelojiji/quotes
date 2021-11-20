@@ -6,7 +6,7 @@ const Menu = (props) => {
   return (
     <div className="Menu-container">
       <div className="Menu">
-        <a
+        <Link to='/'
           class="menu-option active"
           onClick={() => {
             props.setCurrentPage("Home");
@@ -47,8 +47,8 @@ const Menu = (props) => {
             </svg>
           </div>
           <span className="menu-option-text">Home</span>
-        </a>
-        <a
+        </Link>
+        <Link to="/signup"
           class="menu-option"
           onClick={() => {
             props.setCurrentPage("SignUp");
@@ -78,7 +78,7 @@ const Menu = (props) => {
             </svg>
           </div>
           <span className="menu-option-text">Account</span>
-        </a>
+        </Link>
       </div>
     </div>
   );

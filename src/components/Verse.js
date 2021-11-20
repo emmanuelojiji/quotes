@@ -2,6 +2,7 @@ import Quotes from "../QuoteDatabase";
 import { useState } from "react";
 import "./Quote.scss";
 import ChristianVerse from "../ChristianVerseDatabase";
+import IslamicVerse from "../IslamicVerseDatabase";
 
 const Verse = (props) => {
   let randomAffirmation = Quotes[Math.floor(Math.random() * Quotes.length)];
@@ -13,6 +14,11 @@ const Verse = (props) => {
   const [currentChristianVerse, setCurrentChristianVerse] =
     useState(randomChristianVerse);
 
+    let randomIslamicVerse =
+    IslamicVerse[Math.floor(Math.random() * IslamicVerse.length)];
+  const [currentIslamicVerse, setCurrentIslamicVerse] =
+    useState(randomIslamicVerse);
+
   const changeAffirmation = () => {
     randomAffirmation = Quotes[Math.floor(Math.random() * Quotes.length)];
     setCurrentAffirmation(randomAffirmation);
@@ -22,6 +28,12 @@ const Verse = (props) => {
     randomChristianVerse =
       ChristianVerse[Math.floor(Math.random() * ChristianVerse.length)];
     setCurrentChristianVerse(randomChristianVerse);
+  };
+
+  const changeIslamicVerse= () => {
+    randomIslamicVerse =
+      IslamicVerse[Math.floor(Math.random() * IslamicVerse.length)];
+    setCurrentIslamicVerse(randomIslamicVerse);
   };
 
   const [refreshClicked, setRefreshClicked] = useState(false);
@@ -53,21 +65,23 @@ const Verse = (props) => {
             >
               <span
                 onClick={() => {
-                  changeChristianVerse();
-                  verseMenuOpen ? setVerseMenuOpen(false) : setVerseMenuOpen(true);
-
+                  religionSelected == 'christian' ? changeChristianVerse() : changeIslamicVerse();
+          
+                  verseMenuOpen
+                    ? setVerseMenuOpen(false)
+                    : setVerseMenuOpen(true);
                 }}
               >
-                Shuffle
+                New verse
               </span>
-              <span>Tweet</span>
+              <span>Share as Tweet</span>
               <span
                 onClick={() => {
                   setReligionSelected("christian");
                   setVerseMenuOpen(false);
                 }}
               >
-                Switch to Christian
+                Switch to Christianity
               </span>
               <span
                 onClick={() => {
@@ -77,6 +91,7 @@ const Verse = (props) => {
               >
                 Switch to Islam
               </span>
+              <span>Copy</span>
             </div>
           </div>
         </div>
@@ -97,8 +112,8 @@ const Verse = (props) => {
           } else {
             return (
               <div className="islam-version">
-                <span className="verse">Islam</span>
-                <span className="quote">Islam Paragraph</span>
+                <span className="verse">{currentIslamicVerse.passage1}</span>
+                <span className="quote">{currentIslamicVerse.passage2}</span>
               </div>
             );
           }
