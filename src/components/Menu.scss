@@ -2,6 +2,7 @@
   height: 100vh;
   width: 220px;
   position: fixed;
+  z-index: 1;
   left: 0;
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -13,20 +14,22 @@
   }
 }
 .Menu {
+  background: #f2f2f2;
+  border-top: solid 1px #d9d9d9;
   color: white;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  position: fixed;
+  bottom: 0;
 
   @media only screen and (max-width: 768px) {
     height: auto;
     flex-direction: row;
     justify-content: center;
-    width: 75%;
-    background: #42cdca;
+    width: 100%;
     padding: 0;
-    border-radius: 50px;
   }
 
   .menu-option {
@@ -56,13 +59,7 @@
       margin-right: 20px;
     }
 
-    &.active {
-      background: #42cdca;
-
-      @media only screen and (max-width: 768px) {
-        background: black;
-      }
-    }
+    
 
     .menu-option-text {
       @media only screen and (max-width: 768px) {

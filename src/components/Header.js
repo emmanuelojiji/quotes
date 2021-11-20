@@ -1,7 +1,6 @@
-import './Header.scss'
+import "./Header.scss";
 
 const Header = () => {
-
   const newDate = new Date();
 
   const days = [
@@ -16,16 +15,16 @@ const Header = () => {
   ];
 
   let day = days[newDate.getDay()];
+
   let time = newDate.getHours();
 
-  const greeting = time < 12 ? 'Good Morning' : 'Good Evening'
+  const greeting = time < 12 ? "Good Morning" : "Good Evening";
 
-  
   return (
     <header>
       <div>
-      <span className="day">{day}</span>
-      <h3 className="greeting">{greeting}</h3>
+        <span className="day">{day}</span>
+        <h3 className="greeting">{greeting}</h3>
       </div>
 
       <div className="profile"></div>

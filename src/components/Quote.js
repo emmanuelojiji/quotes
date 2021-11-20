@@ -1,8 +1,8 @@
-import Quotes from "../fonts/QuoteDatabase";
+import Quotes from "../QuoteDatabase";
 import { useState } from "react";
 import "./Quote.scss";
 
-const Quote = () => {
+const Quote = (props) => {
   let randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
 
   const [currentQuote, setCurrentQuote] = useState(randomQuote);
@@ -16,7 +16,7 @@ const Quote = () => {
 
   return (
     <>
-      <div class="quote-container">
+      <div class="quote-container" style={{backgroundColor:props.backgroundColor }}>
         <div className="quote-header">
           <h2 className="affirmation">Your Affirmation</h2>
         </div>

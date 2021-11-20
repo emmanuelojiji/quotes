@@ -1,12 +1,12 @@
 header {
   max-width: 100%;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   margin-left: 200px;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 50px;
-
 
   @media only screen and (max-width: 768px) {
     margin-left: 0;
@@ -15,17 +15,20 @@ header {
 }
 
 .day {
-  color: black;
-  font-family: 'Roboto';
-  font-size: 0.9em;
+  color: #b2b2b2;
+  font-family: "Roboto";
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .greeting {
   color: black;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  font-size: 1.7em;
 }
 
-.profile{
+.profile {
   height: 35px;
   width: 35px;
   background: lightgray;
