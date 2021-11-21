@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/quotes/static/css/main.f69c68a8.chunk.css",
-    "main.js": "/quotes/static/js/main.52da6800.chunk.js",
-    "main.js.map": "/quotes/static/js/main.52da6800.chunk.js.map",
+    "main.css": "/quotes/static/css/main.fa07242b.chunk.css",
+    "main.js": "/quotes/static/js/main.211166be.chunk.js",
+    "main.js.map": "/quotes/static/js/main.211166be.chunk.js.map",
     "runtime-main.js": "/quotes/static/js/runtime-main.2898baa9.js",
     "runtime-main.js.map": "/quotes/static/js/runtime-main.2898baa9.js.map",
     "static/js/2.2aa682bd.chunk.js": "/quotes/static/js/2.2aa682bd.chunk.js",
     "static/js/2.2aa682bd.chunk.js.map": "/quotes/static/js/2.2aa682bd.chunk.js.map",
     "index.html": "/quotes/index.html",
-    "static/css/main.f69c68a8.chunk.css.map": "/quotes/static/css/main.f69c68a8.chunk.css.map",
+    "static/css/main.fa07242b.chunk.css.map": "/quotes/static/css/main.fa07242b.chunk.css.map",
     "static/js/2.2aa682bd.chunk.js.LICENSE.txt": "/quotes/static/js/2.2aa682bd.chunk.js.LICENSE.txt",
     "static/media/Home.scss": "/quotes/static/media/landscape-night.747369f2.gif",
     "static/media/logo.1cd7ca64.svg": "/quotes/static/media/logo.1cd7ca64.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.2898baa9.js",
     "static/js/2.2aa682bd.chunk.js",
-    "static/css/main.f69c68a8.chunk.css",
-    "static/js/main.52da6800.chunk.js"
+    "static/css/main.fa07242b.chunk.css",
+    "static/js/main.211166be.chunk.js"
   ]
 }
