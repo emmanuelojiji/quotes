@@ -9,10 +9,6 @@ import { useState, useEffect } from "react";
 function App(props) {
   const [currentPage, setCurrentPage] = useState(null);
 
-  useEffect(() => {
-    console.log(currentPage);
-  });
-
   return (
     <>
       <div className="App">
